@@ -9,7 +9,7 @@ public partial class Game
 
     public string Name { get; set; } = null!;
 
-    public int? PublicationDate { get; set; }
+    public DateTime? PublicationDate { get; set; }
 
     public string? Platform { get; set; }
 
