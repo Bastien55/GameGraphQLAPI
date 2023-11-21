@@ -17,7 +17,7 @@ namespace GameGraphQLAPI
             var connectionString = builder.Configuration.GetConnectionString("DbConnection");
 
             builder.Services.AddDbContext<GamesDBContext>(options => options.UseMySql(ServerVersion.AutoDetect(connectionString)));
-
+            
             // Add services to the container.
 
             builder.Services

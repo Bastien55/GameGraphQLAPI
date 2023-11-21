@@ -29,11 +29,12 @@
       }
     },
     "Docker": {
-      "commandName": "DockerCompose",
+      "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/graphql",
       "publishAllPorts": true,
-      "useSSL": true
+      "useSSL": false,
+      "DockerfileRunArguments": "-itd --network=gamegraphqlapi_network_graphql"
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",

@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GameGraphQLAPI.Context;
 
+/// <summary>
+/// Context of the database GamesDB for entity framework
+/// </summary>
 public partial class GamesDBContext : DbContext
 {
     public GamesDBContext()

@@ -19,16 +19,8 @@ services:
       PMA_HOST: db
       PMA_PORT: 3306
       PMA_ARBITRARY: 1
-    restart: always
     ports:
       - "8081:80"
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "4223:80"
-    container_name: api_graphql
 
 volumes:
   db_data:

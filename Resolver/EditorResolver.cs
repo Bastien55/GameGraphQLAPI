@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GameGraphQLAPI.Resolver
 {
+    /// <summary>
+    /// Class for return the datas from the database by some methods 
+    /// </summary>
     public class EditorResolver : IResolver<Editor>
     {
 
